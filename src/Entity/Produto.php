@@ -6,7 +6,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 
 /**
- * @Entity
+ * @Entity(repositoryClass="Itallo\Doctrine\Repository\ProdutoRepository")
  */
 class Produto
 {
@@ -110,10 +110,22 @@ class Produto
         return $this;
     }
 
+    /**
+     * @return Categoria[]
+     */
     public function getCategorias(): Collection
     {
         return $this->categorias;
     }
 
-        
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): self
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+
 }

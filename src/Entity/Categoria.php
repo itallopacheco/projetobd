@@ -15,6 +15,15 @@ class Categoria
      * @Column (type="integer")
      */
     private $id;
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): self
+    {
+        $this->id = $id;
+        return $this;
+    }
     /**
      * @Column (type="string",nullable=false)
      */

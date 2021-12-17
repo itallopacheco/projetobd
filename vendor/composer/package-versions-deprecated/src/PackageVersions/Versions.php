@@ -66,6 +66,7 @@ final class Versions
   'symfony/stopwatch' => 'v6.0.0@0e0ed55d1ffdfadd03af180443fbdca9876483b3',
   'symfony/string' => 'v6.0.1@0cfed595758ec6e0a25591bdc8ca733c1896af32',
   'symfony/var-exporter' => 'v6.0.0@32cf62f12d35d441da1ca4a4c0fc1cd5f2a207af',
+  'twbs/bootstrap' => 'v5.1.3@1a6fdfae6be09b09eaced8f0e442ca6f7680a61e',
   '__root__' => '1.0.0+no-version-set@',
 );
 
