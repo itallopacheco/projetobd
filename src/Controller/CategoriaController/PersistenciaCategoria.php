@@ -21,12 +21,23 @@ class PersistenciaCategoria implements InterfaceControladorRequisicao
     {
         $nome = filter_input(
             INPUT_POST,
-            'nome-categoria',
+            'nome',
             FILTER_SANITIZE_STRING
         );
-        $categoria = new Categoria();
-        $categoria->setNome($nome);
-        $this->entityManager->persist($categoria);
+
+        $id = filter_input(
+            INPUT_GET,
+            'id',
+            FILTER_VALIDATE_INT
+        );
+
+        if(!is_null($id) && $id !==false){
+            $categoria = $this->entityManager->find(Categoria::class, $id);
+            $categoria->setNome($nome);
+        }else{
+            $categoria = new Categoria();
+            $this->entityManager->persist($categoria);
+        }
         $this->entityManager->flush();
 
         header('Location: /listar-categorias', false, 302);
