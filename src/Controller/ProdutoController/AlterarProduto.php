@@ -1,7 +1,8 @@
 <?php
 
-namespace Itallo\Doctrine\Controller;
+namespace Itallo\Doctrine\Controller\ProdutoController;
 
+use Itallo\Doctrine\Controller\InterfaceControladorRequisicao;
 use Itallo\Doctrine\Entity\Produto;
 use Itallo\Doctrine\Helper\EntityManagerFactory;
 
@@ -31,7 +32,7 @@ class AlterarProduto implements InterfaceControladorRequisicao
 
         $produto = $this->repositorioProdutos->find($id);
         $titulo = 'Alterar Produto: ' . $produto->getNome();
-        require __DIR__ .'/../../view/produtos/formulario-produtos.php';
+        require __DIR__ .'/../../../view/produtos/formulario-produtos.php';
 
 
     }

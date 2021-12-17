@@ -9,7 +9,7 @@
 
                             <span>
                                 <a href="/atualizar-categoria?id=<?= $categoria->getId(); ?>" class="btn btn-info btn-sm">
-                                    Atualizar
+                                    Alterar
                                 </a>
                                 <a href="/excluir-categoria?id=<?= $categoria->getId(); ?>" class="btn btn-danger btn-sm">
                                     Excluir

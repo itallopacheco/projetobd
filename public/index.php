@@ -2,10 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Itallo\Doctrine\Controller\FormularioProduto;
 use Itallo\Doctrine\Controller\InterfaceControladorRequisicao;
-use Itallo\Doctrine\Controller\ListarProdutos;
-use Itallo\Doctrine\Controller\PersistenciaProduto;
 
 $caminho = $_SERVER['PATH_INFO'];
 $rotas = require __DIR__ . '/../config/routes.php';

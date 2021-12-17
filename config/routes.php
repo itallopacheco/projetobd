@@ -1,15 +1,16 @@
 <?php
 
-use Itallo\Doctrine\Controller\{AlterarCategoria,
-    AlterarProduto,
-    ExcluirCategoria,
-    ExcluirProduto,
-    FormularioCategoria,
-    FormularioProduto,
-    ListarCategorias,
-    ListarProdutos,
-    PersistenciaCategoria,
-    PersistenciaProduto};
+use Itallo\Doctrine\Controller\{
+    CategoriaController\AlterarCategoria,
+    CategoriaController\ExcluirCategoria,
+    CategoriaController\FormularioCategoria,
+    CategoriaController\ListarCategorias,
+    CategoriaController\PersistenciaCategoria,
+    ProdutoController\AlterarProduto,
+    ProdutoController\ExcluirProduto,
+    ProdutoController\FormularioProduto,
+    ProdutoController\ListarProdutos,
+    ProdutoController\PersistenciaProduto};
 
 $rotas = [
     '/listar-produtos' => ListarProdutos::class,

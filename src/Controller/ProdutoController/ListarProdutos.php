@@ -1,7 +1,8 @@
 <?php
 
-namespace Itallo\Doctrine\Controller;
+namespace Itallo\Doctrine\Controller\ProdutoController;
 
+use Itallo\Doctrine\Controller\InterfaceControladorRequisicao;
 use Itallo\Doctrine\Entity\Produto;
 use Itallo\Doctrine\Helper\EntityManagerFactory;
 
@@ -20,6 +21,6 @@ class ListarProdutos implements InterfaceControladorRequisicao
     {
         $produtos = $this->repositorioDeProdutos->findAll();
         $titulo="Lista de Produtos";
-        require __DIR__ . '/../../view/produtos/listar-produtos.php';
+        require __DIR__ . '/../../../view/produtos/listar-produtos.php';
     }
 }
