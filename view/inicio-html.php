@@ -18,6 +18,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="/listar-categorias">Categorias</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/listar-todos">Listar Todos</a>
+                </li>
             </ul>
         </div>
     </nav>

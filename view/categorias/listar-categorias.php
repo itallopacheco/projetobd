@@ -5,9 +5,9 @@
     <ul class="list-group">
         <?php foreach ($categorias as $categoria):?>
             <li class="list-group-item d-flex justify-content-between" >
+                <?= $categoria->getId(); ?>
                 <?= $categoria->getNome(); ?>
-
-                            <span>
+                <span>
                                 <a href="/atualizar-categoria?id=<?= $categoria->getId(); ?>" class="btn btn-info btn-sm">
                                     Alterar
                                 </a>

@@ -1,13 +1,13 @@
 <?php include __DIR__ . '/../inicio-html.php'; ?>
 
 
-<form action="/salvar-categoria" method="post">
+<form action="/salvar-categoria<?= isset($categoria) ? '?id=' . $categoria->getId() : ''; ?> "method="post">
     <div class="form-group">
 
         <label for="nome">Nome</label>
         <input type="text"
                id="nome"
-               name="nome-categoria "
+               name="nome"
                class="form-control"
                 value="<?= isset($categoria) ? $categoria->getNome() : '' ;?>">
 

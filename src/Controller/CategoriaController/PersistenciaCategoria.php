@@ -31,11 +31,12 @@ class PersistenciaCategoria implements InterfaceControladorRequisicao
             FILTER_VALIDATE_INT
         );
 
-        if(!is_null($id) && $id !==false){
+        if (!is_null($id) && $id !==false){
             $categoria = $this->entityManager->find(Categoria::class, $id);
             $categoria->setNome($nome);
         }else{
             $categoria = new Categoria();
+            $categoria->setNome($nome);
             $this->entityManager->persist($categoria);
         }
         $this->entityManager->flush();

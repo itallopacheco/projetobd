@@ -6,8 +6,10 @@
                 <?php foreach ($produtos as $produto):?>
                     <li class="list-group-item d-flex justify-content-between" >
                         <?= $produto->getNome(); ?>
-
                         <span>
+                            <a href="/adicionar-categoria?id=<?= $produto->getId();?>"  class="btn btn-primary btn-sm">
+                                Categoria
+                            </a>
                             <a href="/atualizar-produto?id=<?= $produto->getId();?>"  class="btn btn-info btn-sm">
                                 Atualizar
                             </a>
